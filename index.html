@@ -10,40 +10,47 @@
 <body>
     <!--navbar-->
     <nav>
-        <ul>
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a  href="#">
-                <div class="icon"></div>
-                <div class="icon"></div>
-                <div class="icon"></div>
-            </a></li>
-            <li><a  href="#">
-                <i class="fas fa-user-circle"></i>
-            </a></li>
+        <div><a  href="#">
+            <i class="fas fa-user-circle"></i>
+        </a></div>
+        <div><a href="#">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div></a></div>
+        <div><a href="#">Images</a></div>
+        <div><a href="#">Gmail</a></div>
+       
 
-        </ul> 
+       
     </nav>
     <main id="main">
+
         <!--google logo-->
-        <div id="img">
+
+        <div class="img">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
         </div>
+
         <!--search bar-->
-            <div id="search">
-                <input type="text" class="search" placeholder="Search Google or type a URL">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <img id="microphone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/833px-Google_mic.svg.png">
-            </div>
+
+        <div class="search-bar">
+            <input type="text" class="search" placeholder="Search Google or type a URL">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <img class="microphone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/833px-Google_mic.svg.png">
+        </div>
+
             <!--links-->
-        <div id ="button">
+
+        <div class ="button">
             <button type="submit">Google search</button>
             
             <button type="submit">I'm Feeling Lucky</button>
         </div>
+
         <!--links-->
-        <div>
-            <ul>
+
+        <div class='offers'>
+            <ul class="lang">
                <li> Google offered in:</li> 
                <li><a href="#">Hausa</a></li>
                <li><a href="#">Igbo</a></li>
@@ -54,14 +61,16 @@
         </div>
         
     </main>
+    
     <!--footer links-->
-    <footer>
-        <div class="footer">
+
+    <div class="footer">
+        <div class="nig">
             Nigeria
         </div>
         <hr>
-        <div id ="footer">
-            <div style="float: left;">
+        <div class ="footer-contents ">
+            <div class="footer-items">
                 <ul>
                     <li><a href="#">Advertising</a></li>
                     <li><a href="#">Business</a></li>
@@ -69,7 +78,7 @@
                     <li><a href="#">How Search Works</a></li> 
                 </ul>
             </div>
-            <div class="footer-link" style="float: right;">
+            <div class="footer-link">
                 <ul>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms</a></li>

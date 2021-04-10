@@ -1,35 +1,49 @@
-/*navbar*/
-nav>ul{
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav>div{
     float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
-}
-nav>ul>li{
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 12px;
+    display: inline-flex;
+    margin-right: 15px;
+    padding-top: 15px;
     
 }
 
-nav>ul>li>a{
+
+a{
     text-decoration: none;
     color: gray
 }
+
  .icon{
      width: 15px;
-     height: 1.5px;
+     height: 1px;
      border-bottom: 4px dotted gray;
+     margin-top: 2px;
     
  }
 
+ .fa-user-circle{
+     font-size: 1.8rem;
+ }
+
 /*logo*/
-#img{
-   margin: auto;
-   display: block;
-   width: 50%;
-   padding-top: 100px;
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
 }
  #main{
     margin: auto;
@@ -38,18 +52,19 @@ nav>ul>li>a{
  }
 
  /* main*/
- main>div{
+.offers{
     padding-top: 10px;
     text-align: center;
     width: 100%;
  }
 
- main>div>ul>li{
-    display: inline;
+ .lang{
+    display: inline-flex;
     font-size: 14px;
+    list-style-type: none;
 
  }
- main>div>ul>li>a{
+ a{
     text-decoration: none;
     padding: 3px;
     
@@ -57,26 +72,29 @@ nav>ul>li>a{
 
  /*search bar*/
 
- #search{
-    position: relative; 
-     margin: auto;
-     padding-top: 16px;
-     width: 100%;
-     text-align:center;
+ div.search-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    width: 100%;
+   
  }
 
- #search i{
+ 
+ .fa-search{
     position: absolute; 
-    left: 400px; 
-    top: 30px; 
+    right: 928px; 
+    top: 28px; 
     color: gray;
     font-size: 15px;
  }
- #microphone{
-     width:13px;
+ .microphone{
+    width: 13px;
     position: absolute; 
-    left: 940px; 
-    top: 27px; 
+    left: 928px; 
+    top: 28px; 
     color: gray;
     font-size: 15px;
  }
@@ -95,82 +113,134 @@ nav>ul>li>a{
 
 /*link buttons*/
 
- #button{
+ .button{
      margin-top: 16px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
 
- button[type=submit]{
+ button{
      padding: 10px;
+     margin: 10px;
      border: none;
      color: gray;
  }
 /*footer style*/
- footer{
-     position: fixed;
-     left: 0;
-     bottom: auto;
-     width:100%;
-     margin-top: 123px;
-    background-color: rgb(236, 228, 228);
- }
+
+div.footer {
+    position: fixed;
+    height: 150px;
+    bottom: 0;
+    width: 100%;
+    background: rgb(245, 238, 238);
+    /*padding: 0.1rem;*/
+    margin-top: 2rem;
+}
  
- #footer>div>ul>li{
-     display: inline;
-     padding-right: 20px
+ .footer-contents{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 20px;
+     margin-top: 35px;
  }
 
- footer a{
+
+ div.footer a{
      padding: 10px;
      text-decoration: none;
      color: gray;
      
  }
 
- .footer{
+ .footer-items li{
+    display: inline-flex;
+ }
+
+  .footer-items > ul li{
+     list-style-type: none;
+ }
+
+ .footer-link li{
+    display: inline-flex;
+ }
+
+ .footer-link > ul li{
+    list-style-type: none;
+}
+
+
+ .nig{
      padding-top: 20px;
      padding-left: 50px;
      color: gray;
  }
 
- @media(max-width:599px){
-    #footer>ul>li{
-        display: flex;
-        /*flex-direction: column;
-        justify-items: center;*/
+ @media(max-width:719px){
+    nav>div {
+        font-size: 15px;
+    }
+
+    .fa-user-circle{
+        font-size: 15px;
+
+    }
+
+    .img{
+        width: 100%;
+        /*height: 10px;*/
+        padding-top: 80px;
     }
 
    
-     footer a{
-         font-size: 0.6rem;
+    .lang{
+        display: block;
+        font-size: 4px;
         
-     }
-
-     footer{
-         margin-top: 40px;
-         height: 150px;
-     }
-
-     main>div>ul>li{
-         font-size: 12px;
-     }
-
-     .footer-link>ul{
-        text-align: center;
     }
- 
+
+    .offers{
+        margin-bottom: 5rem;
+    }
+
+    .lang li{
+        font-size: 11px;
+    }
+
+    div.search-bar{
+        margin-top: 20px;
+    }
+
+    .fa-search{
+        right: 228px; 
+     }
+     .microphone{ 
+        left: 228px; 
+     }
+
+     .search{
+         font-size: 11px;
+     }
+
+     button{
+        font-size: 11px;
+     }
 
     input[type=text]{
         width: 80%
     }
 
-    #search i{
-        
-        left: 40px; 
-        
-     }
-
-     #microphone{ 
-       left: 385px; 
+    div.footer {
+        display: none;
+        height: 80px;
     }
-   
+
+    .footer-contents{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*padding: 0 3px;*/
+        font-size: 8px;
+    }
  }
